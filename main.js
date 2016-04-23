@@ -197,6 +197,8 @@ ASSET_MANAGER.downloadAll(function () {
     var canvas = document.getElementById('gameWorld');
     var ctx = canvas.getContext('2d');
 
+    canvas.focus();
+
     var gameEngine = new GameEngine();
     var bg = new Background(gameEngine);
     var samus = new Samus(gameEngine);
